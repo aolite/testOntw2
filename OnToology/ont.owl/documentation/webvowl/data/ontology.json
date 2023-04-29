@@ -1,0 +1,1858 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/def/testontw", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "https://w3id.org/def/testontw",
+    "comments" : {
+      "undefined" : "Wine Ontology for Recommendation System\nAuthors: Yago Estévez Davila, José David Zapata García"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/def/testontw#Rating",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating"
+    },
+    "subClasses" : [ "10", "11" ],
+    "comment" : {
+      "undefined" : "Mean puntuation obtained from customers"
+    },
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Consumables",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Consumables"
+    },
+    "subClasses" : [ "31", "32", "33" ],
+    "comment" : {
+      "undefined" : "Everything that is able for consumption"
+    },
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Soups",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Soups"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Seafood_soup",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Seafood_soup"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Meals with liquid consistence"
+    },
+    "id" : "46",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineCharasteristics",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineCharasteristics"
+    },
+    "subClasses" : [ "61", "62", "63" ],
+    "comment" : {
+      "undefined" : "This class collects the properties needed to describe wine in terms of flavour and aspect"
+    },
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Wine",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Wine",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Wine"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Aquilon_Garnacha",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Aquilon_Garnacha"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Bruto",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Bruto"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Terras_Gauda_O_Rosal"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Toneles_Moscatel",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Toneles_Moscatel"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Alcoholic beverage made from fermented grape juice"
+    },
+    "id" : "2",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Reserva",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reserva"
+    },
+    "comment" : {
+      "undefined" : "These wines have been aged between 25 and 59 months"
+    },
+    "id" : "65",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Lemon",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lemon"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Feminello",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Feminello"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Sour tasting yellow fruit"
+    },
+    "id" : "53",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Grape",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Grape",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Grape"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Loureiro",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Loureiro"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Moscatel_de_Alejandría",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Moscatel_de_Alejandría"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Caiño_blanco",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Caiño_blanco"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Monastrell",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Monastrell"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Garnacha",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Garnacha"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Fruit used to make wine"
+    },
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Drinkables",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Drinkables"
+    },
+    "subClasses" : [ "2" ],
+    "comment" : {
+      "undefined" : "Drinks and simmilar"
+    },
+    "id" : "33",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Pasta",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pasta"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Spaguetti",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Spaguetti"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Starchy food asociated with italian cuisine"
+    },
+    "id" : "4",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Fruit",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fruit"
+    },
+    "subClasses" : [ "57", "54" ],
+    "comment" : {
+      "undefined" : "Vegetables with pulp arount the seed(s)"
+    },
+    "id" : "17",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineSugar",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineSugar"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Sweet",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Sweet"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Dry",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Dry"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#OffDry",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "OffDry"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Describes the sweetness of the wine"
+    },
+    "id" : "79",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#NonSweetFruit",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonSweetFruit"
+    },
+    "subClasses" : [ "53" ],
+    "comment" : {
+      "undefined" : "Fruits with a sour or acid taste"
+    },
+    "id" : "54",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Vegetables",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vegetables"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Carrot",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Carrot"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Other kind of vegetables"
+    },
+    "id" : "5",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Good",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Good"
+    },
+    "comment" : {
+      "undefined" : "Items with puntuation higher between 3 and 3.99 out of 5"
+    },
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#GranReserva",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GranReserva"
+    },
+    "comment" : {
+      "undefined" : "Wines with at least 60 months of aging"
+    },
+    "id" : "89",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Desserts",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Desserts"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Strawberry_cake",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Strawberry_cake"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Lemon_cake",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Lemon_cake"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Sweet meals"
+    },
+    "id" : "45",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Meat",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Meat"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Red_meats",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Red_meats"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Red meats like beef or pig"
+    },
+    "id" : "15",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#SweetFruit",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SweetFruit"
+    },
+    "subClasses" : [ "59", "56" ],
+    "comment" : {
+      "undefined" : "Fruits with sweet taste"
+    },
+    "id" : "57",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Dishes",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dishes"
+    },
+    "subClasses" : [ "46", "103", "51", "45" ],
+    "comment" : {
+      "undefined" : "Different courses made with various ingredients"
+    },
+    "id" : "32",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineFlavour",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineFlavour"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Moderate",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Moderate"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Strong",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Strong"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Delicate",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Delicate"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The flavours that can be appreciated when tasting the wine"
+    },
+    "id" : "7",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineType",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineType"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Monastrel",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Monastrel"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Chardonnay",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Chardonnay"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Grenache",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Grenache"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Sherry",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Sherry"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Ribera_del_Duero_Red",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Ribera_del_Duero_Red"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Albariño",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Albariño"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Types of wine, depending of grapes used in the preparation"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Strawberry",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Strawberry"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Camarosa",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Camarosa"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Sweet tasting berry, red in colour"
+    },
+    "id" : "59",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#TraditionalDishes",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TraditionalDishes"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Cocido",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Cocido"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Meals associated with confort food"
+    },
+    "id" : "103",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Region",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Jerez-Xeres-Sherry",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Jerez-Xeres-Sherry"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Jumilla",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Jumilla"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Campo_de_Borja",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Campo_de_Borja"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Ribera_del_Duero",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Ribera_del_Duero"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Toro",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Toro"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Rias_Baixas",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Rias_Baixas"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Geographical delimitations"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Seafood",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seafood"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Shellfish",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Shellfish"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Shellfish or seafish, excludes sweet water fish"
+    },
+    "id" : "13",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineBody",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineBody"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Light",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Light"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Full",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Full"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Medium",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Medium"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The sensation causes by the wine in the mouth when sipping it"
+    },
+    "id" : "94",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Aging",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Aging_of_wine",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Aging"
+    },
+    "subClasses" : [ "89", "105", "65" ],
+    "comment" : {
+      "undefined" : "This class provides information about the wine's aging"
+    },
+    "id" : "61",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Edibles",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Edibles"
+    },
+    "subClasses" : [ "13", "15", "26", "17", "4", "5" ],
+    "comment" : {
+      "undefined" : "Ingredients used for course meals"
+    },
+    "id" : "31",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Excellent",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Excellent"
+    },
+    "comment" : {
+      "undefined" : "Items with puntuation higher or equal than 4 out of 5"
+    },
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Crianza",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Crianza"
+    },
+    "comment" : {
+      "undefined" : "These wines usually have 24 or less months of aging"
+    },
+    "id" : "105",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineColour",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineColour"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Rose",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Rose"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Red",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Red"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#White",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "White"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Wine's visual qualities"
+    },
+    "id" : "63",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Winery",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Winery",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Winery"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Alto_Moncayo",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Alto_Moncayo"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Terras_Gauda",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Terras_Gauda"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Valdespino",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Valdespino"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Toro_Albala",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Toro_Albala"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Altos_de_Rioja",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Altos_de_Rioja"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/testontw#Juan_Gil",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Juan_Gil"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Wine makers"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#Fowl",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fowl"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#White_meats",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "White_meats"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "White meat like chicken, rabbit, etc."
+    },
+    "id" : "26",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#ItalianDishes",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItalianDishes"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/testontw#Bolognese",
+      "baseIri" : "https://w3id.org/def/testontw",
+      "labels" : {
+        "IRI-based" : "Bolognese"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Traditional italian course meals"
+    },
+    "id" : "51",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/def/testontw#WineTaste",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineTaste"
+    },
+    "subClasses" : [ "7", "79", "94" ],
+    "comment" : {
+      "undefined" : "Describes the flavour in terms of various aspects"
+    },
+    "id" : "62",
+    "superClasses" : [ "60" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/def/testontw#hasWine",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasWine"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Provides the wines made by each winery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasFlavour",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasFlavour"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The wine flavour can be delicate, moderate or strong"
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "5",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "5",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasWinery",
+    "inverse" : "22",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasWinery"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Associates each winery with its region"
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "4",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "5",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "13",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "15",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "17",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "4",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasConservationTemperature",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasConservationTemperature"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Recommended preservation temperature for the wine as given by its maker"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "range" : "31",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "31",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasMaker",
+    "inverse" : "43",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasMaker"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Associates each wine with its correspondering winery"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "42"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasYears",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasYears"
+    },
+    "cardinality" : "1",
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Wine's aging years"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "51",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "57",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasPairing",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasPairing"
+    },
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "Provides recommendations for food and wine pairing"
+    },
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#madeIntoWine",
+    "inverse" : "67",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "madeIntoWine"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Provides information about the wines made from a given grape"
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "33",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "60",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "17",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "17",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "30",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "30",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "60",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "60",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasColour",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hasColour"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The wine colour can be red, rose or white"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "range" : "30",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasMaker",
+    "inverse" : "43",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasMaker"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Associates each wine with its correspondering winery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "59",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "57",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "46",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasDesignation",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasDesignation"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Provides information about wine's origin designation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasCharacteristics",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasCharacteristics"
+    },
+    "domain" : "2",
+    "subproperty" : [ "76", "90", "91", "6" ],
+    "comment" : {
+      "undefined" : "Provides information about the wine's organoleptic properties"
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasAging",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasAging"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Provides information about the wine aging category"
+    },
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "range" : "62",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#madeWithGrape",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "madeWithGrape"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Provides information about the grape(s) used to make a given wine"
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "range" : "31",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "31",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "62",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "62",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "31",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "31",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasBody",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hasBody"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "The wine body can be light, medium or full"
+    },
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "range" : "31",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "31",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "61",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasRating",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Numerical mean rating between 1.0 and 5.0"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "range" : "61",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "61",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "32",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "32",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "32",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "32",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasRegion",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasRegion"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Provides the region where the wine was produced"
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#locatedIn",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Inverse of hasWinery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasSugar",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasSugar"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Wine's sweetnes, can be dry, offdry or sweet"
+    },
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "21",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "60",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "1",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "21",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "21",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#makesWine",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "makesWine"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Provides the list of wines made by a given winery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasType",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Used to associated each wine with its corresponding type"
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "range" : "20",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "60",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#usedToPrepare",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "usedToPrepare"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Provides information about the courses that can be made with each food"
+    },
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/def/testontw#hasFood",
+    "inverse" : "125",
+    "baseIri" : "https://w3id.org/def/testontw",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasFood"
+    },
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "Provides information about the ingredients used for each course"
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  } ]
+}
