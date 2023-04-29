@@ -1,0 +1,878 @@
+<https://w3id.org/def/testontw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/testontw> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<https://w3id.org/def/testontw> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine Ontology for Recommendation System\nAuthors: Yago Estévez Davila, José David Zapata García" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/testontw#sameAs
+<https://w3id.org/def/testontw#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/testontw#hasAging
+<https://w3id.org/def/testontw#hasAging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasAging> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasAging> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Aging> .
+<https://w3id.org/def/testontw#hasAging> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the wine aging category" .
+# 
+# https://w3id.org/def/testontw#hasBody
+<https://w3id.org/def/testontw#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/testontw#hasCharacteristics> .
+<https://w3id.org/def/testontw#hasBody> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasBody> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#WineBody> .
+<https://w3id.org/def/testontw#hasBody> <http://www.w3.org/2000/01/rdf-schema#comment> "The wine body can be light, medium or full" .
+# 
+# https://w3id.org/def/testontw#hasCharacteristics
+<https://w3id.org/def/testontw#hasCharacteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasCharacteristics> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasCharacteristics> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#WineCharasteristics> .
+<https://w3id.org/def/testontw#hasCharacteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the wine's organoleptic properties" .
+# 
+# https://w3id.org/def/testontw#hasColour
+<https://w3id.org/def/testontw#hasColour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasColour> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/testontw#hasCharacteristics> .
+<https://w3id.org/def/testontw#hasColour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasColour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#WineColour> .
+<https://w3id.org/def/testontw#hasColour> <http://www.w3.org/2000/01/rdf-schema#comment> "The wine colour can be red, rose or white" .
+# 
+# https://w3id.org/def/testontw#hasFlavour
+<https://w3id.org/def/testontw#hasFlavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasFlavour> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/testontw#hasCharacteristics> .
+<https://w3id.org/def/testontw#hasFlavour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasFlavour> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#WineFlavour> .
+<https://w3id.org/def/testontw#hasFlavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The wine flavour can be delicate, moderate or strong" .
+# 
+# https://w3id.org/def/testontw#hasFood
+<https://w3id.org/def/testontw#hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasFood> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/testontw#usedToPrepare> .
+<https://w3id.org/def/testontw#hasFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#hasFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#hasFood> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the ingredients used for each course" .
+# 
+# https://w3id.org/def/testontw#hasMaker
+<https://w3id.org/def/testontw#hasMaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasMaker> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/testontw#makesWine> .
+<https://w3id.org/def/testontw#hasMaker> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasMaker> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#hasMaker> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates each wine with its correspondering winery" .
+# 
+# https://w3id.org/def/testontw#hasPairing
+<https://w3id.org/def/testontw#hasPairing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasPairing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#hasPairing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasPairing> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides recommendations for food and wine pairing" .
+# 
+# https://w3id.org/def/testontw#hasRegion
+<https://w3id.org/def/testontw#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasRegion> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#hasRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides the region where the wine was produced" .
+# 
+# https://w3id.org/def/testontw#hasSugar
+<https://w3id.org/def/testontw#hasSugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasSugar> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/testontw#hasCharacteristics> .
+<https://w3id.org/def/testontw#hasSugar> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasSugar> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#WineSugar> .
+<https://w3id.org/def/testontw#hasSugar> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine's sweetnes, can be dry, offdry or sweet" .
+# 
+# https://w3id.org/def/testontw#hasType
+<https://w3id.org/def/testontw#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#WineType> .
+<https://w3id.org/def/testontw#hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to associated each wine with its corresponding type" .
+# 
+# https://w3id.org/def/testontw#hasWine
+<https://w3id.org/def/testontw#hasWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasWine> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#WineType> .
+<https://w3id.org/def/testontw#hasWine> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides the wines made by each winery" .
+# 
+# https://w3id.org/def/testontw#hasWinery
+<https://w3id.org/def/testontw#hasWinery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#hasWinery> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/testontw#locatedIn> .
+<https://w3id.org/def/testontw#hasWinery> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#hasWinery> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#hasWinery> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates each winery with its region" .
+# 
+# https://w3id.org/def/testontw#locatedIn
+<https://w3id.org/def/testontw#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#locatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasWinery" .
+# 
+# https://w3id.org/def/testontw#madeIntoWine
+<https://w3id.org/def/testontw#madeIntoWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#madeIntoWine> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/testontw#madeWithGrape> .
+<https://w3id.org/def/testontw#madeIntoWine> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#madeIntoWine> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#madeIntoWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the wines made from a given grape" .
+# 
+# https://w3id.org/def/testontw#madeWithGrape
+<https://w3id.org/def/testontw#madeWithGrape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#madeWithGrape> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#madeWithGrape> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#madeWithGrape> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the grape(s) used to make a given wine" .
+# 
+# https://w3id.org/def/testontw#makesWine
+<https://w3id.org/def/testontw#makesWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#makesWine> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#makesWine> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#makesWine> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides the list of wines made by a given winery" .
+# 
+# https://w3id.org/def/testontw#usedToPrepare
+<https://w3id.org/def/testontw#usedToPrepare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/testontw#usedToPrepare> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#usedToPrepare> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#usedToPrepare> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about the courses that can be made with each food" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/testontw#hasConservationTemperature
+<https://w3id.org/def/testontw#hasConservationTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/testontw#hasConservationTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasConservationTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/testontw#hasConservationTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Recommended preservation temperature for the wine as given by its maker" .
+# 
+# https://w3id.org/def/testontw#hasDesignation
+<https://w3id.org/def/testontw#hasDesignation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/testontw#hasDesignation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasDesignation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/testontw#hasDesignation> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides information about wine's origin designation" .
+# 
+# https://w3id.org/def/testontw#hasRating
+<https://w3id.org/def/testontw#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/testontw#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/testontw#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical mean rating between 1.0 and 5.0" .
+# 
+# https://w3id.org/def/testontw#hasYears
+<https://w3id.org/def/testontw#hasYears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/testontw#hasYears> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#hasYears> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/def/testontw#hasYears> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine's aging years" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/testontw#Aging
+<https://w3id.org/def/testontw#Aging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Aging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#WineCharasteristics> .
+<https://w3id.org/def/testontw#Aging> <http://www.w3.org/2000/01/rdf-schema#comment> "This class provides information about the wine's aging" .
+<https://w3id.org/def/testontw#Aging> <https://w3id.org/def/testontw#sameAs> "https://dbpedia.org/page/Aging_of_wine" .
+# 
+# https://w3id.org/def/testontw#Consumables
+<https://w3id.org/def/testontw#Consumables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Consumables> <http://www.w3.org/2000/01/rdf-schema#comment> "Everything that is able for consumption" .
+# 
+# https://w3id.org/def/testontw#Crianza
+<https://w3id.org/def/testontw#Crianza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Crianza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Aging> .
+<https://w3id.org/def/testontw#Crianza> <http://www.w3.org/2000/01/rdf-schema#comment> "These wines usually have 24 or less months of aging" .
+# 
+# https://w3id.org/def/testontw#Desserts
+<https://w3id.org/def/testontw#Desserts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Desserts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#Desserts> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/testontw#ItalianDishes> .
+<https://w3id.org/def/testontw#Desserts> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/testontw#Soups> .
+<https://w3id.org/def/testontw#Desserts> <http://www.w3.org/2000/01/rdf-schema#comment> "Sweet meals" .
+# 
+# https://w3id.org/def/testontw#Dishes
+<https://w3id.org/def/testontw#Dishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Dishes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Consumables> .
+<https://w3id.org/def/testontw#Dishes> <http://www.w3.org/2000/01/rdf-schema#comment> "Different courses made with various ingredients" .
+# 
+# https://w3id.org/def/testontw#Drinkables
+<https://w3id.org/def/testontw#Drinkables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Drinkables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Consumables> .
+<https://w3id.org/def/testontw#Drinkables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/testontw#Winery> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/testontw#hasMaker> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/testontw#Drinkables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/testontw#hasYears> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/testontw#Drinkables> <http://www.w3.org/2000/01/rdf-schema#comment> "Drinks and simmilar" .
+# 
+# https://w3id.org/def/testontw#Edibles
+<https://w3id.org/def/testontw#Edibles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Edibles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Consumables> .
+<https://w3id.org/def/testontw#Edibles> <http://www.w3.org/2000/01/rdf-schema#comment> "Ingredients used for course meals" .
+# 
+# https://w3id.org/def/testontw#Excellent
+<https://w3id.org/def/testontw#Excellent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Excellent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Rating> .
+<https://w3id.org/def/testontw#Excellent> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/testontw#Good> .
+<https://w3id.org/def/testontw#Excellent> <http://www.w3.org/2000/01/rdf-schema#comment> "Items with puntuation higher or equal than 4 out of 5" .
+# 
+# https://w3id.org/def/testontw#Fowl
+<https://w3id.org/def/testontw#Fowl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Fowl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#Fowl> <http://www.w3.org/2000/01/rdf-schema#comment> "White meat like chicken, rabbit, etc." .
+# 
+# https://w3id.org/def/testontw#Fruit
+<https://w3id.org/def/testontw#Fruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Fruit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#Fruit> <http://www.w3.org/2000/01/rdf-schema#comment> "Vegetables with pulp arount the seed(s)" .
+# 
+# https://w3id.org/def/testontw#Good
+<https://w3id.org/def/testontw#Good> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Good> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Rating> .
+<https://w3id.org/def/testontw#Good> <http://www.w3.org/2000/01/rdf-schema#comment> "Items with puntuation higher between 3 and 3.99 out of 5" .
+# 
+# https://w3id.org/def/testontw#GranReserva
+<https://w3id.org/def/testontw#GranReserva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#GranReserva> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Aging> .
+<https://w3id.org/def/testontw#GranReserva> <http://www.w3.org/2000/01/rdf-schema#comment> "Wines with at least 60 months of aging" .
+# 
+# https://w3id.org/def/testontw#Grape
+<https://w3id.org/def/testontw#Grape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Grape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#SweetFruit> .
+<https://w3id.org/def/testontw#Grape> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/testontw#Strawberry> .
+<https://w3id.org/def/testontw#Grape> <http://www.w3.org/2000/01/rdf-schema#comment> "Fruit used to make wine" .
+<https://w3id.org/def/testontw#Grape> <https://w3id.org/def/testontw#sameAs> "https://dbpedia.org/page/Grape" .
+# 
+# https://w3id.org/def/testontw#ItalianDishes
+<https://w3id.org/def/testontw#ItalianDishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#ItalianDishes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#ItalianDishes> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/testontw#Soups> .
+<https://w3id.org/def/testontw#ItalianDishes> <http://www.w3.org/2000/01/rdf-schema#comment> "Traditional italian course meals" .
+# 
+# https://w3id.org/def/testontw#Lemon
+<https://w3id.org/def/testontw#Lemon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Lemon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#NonSweetFruit> .
+<https://w3id.org/def/testontw#Lemon> <http://www.w3.org/2000/01/rdf-schema#comment> "Sour tasting yellow fruit" .
+# 
+# https://w3id.org/def/testontw#Meat
+<https://w3id.org/def/testontw#Meat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Meat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#Meat> <http://www.w3.org/2000/01/rdf-schema#comment> "Red meats like beef or pig" .
+# 
+# https://w3id.org/def/testontw#NonSweetFruit
+<https://w3id.org/def/testontw#NonSweetFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#NonSweetFruit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Fruit> .
+<https://w3id.org/def/testontw#NonSweetFruit> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/def/testontw#SweetFruit> .
+<https://w3id.org/def/testontw#NonSweetFruit> <http://www.w3.org/2000/01/rdf-schema#comment> "Fruits with a sour or acid taste" .
+# 
+# https://w3id.org/def/testontw#Pasta
+<https://w3id.org/def/testontw#Pasta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Pasta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#Pasta> <http://www.w3.org/2000/01/rdf-schema#comment> "Starchy food asociated with italian cuisine" .
+# 
+# https://w3id.org/def/testontw#Rating
+<https://w3id.org/def/testontw#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Mean puntuation obtained from customers" .
+# 
+# https://w3id.org/def/testontw#Region
+<https://w3id.org/def/testontw#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical delimitations" .
+# 
+# https://w3id.org/def/testontw#Reserva
+<https://w3id.org/def/testontw#Reserva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Reserva> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Aging> .
+<https://w3id.org/def/testontw#Reserva> <http://www.w3.org/2000/01/rdf-schema#comment> "These wines have been aged between 25 and 59 months" .
+# 
+# https://w3id.org/def/testontw#Seafood
+<https://w3id.org/def/testontw#Seafood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Seafood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#Seafood> <http://www.w3.org/2000/01/rdf-schema#comment> "Shellfish or seafish, excludes sweet water fish" .
+# 
+# https://w3id.org/def/testontw#Soups
+<https://w3id.org/def/testontw#Soups> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Soups> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#Soups> <http://www.w3.org/2000/01/rdf-schema#comment> "Meals with liquid consistence" .
+# 
+# https://w3id.org/def/testontw#Strawberry
+<https://w3id.org/def/testontw#Strawberry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Strawberry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#SweetFruit> .
+<https://w3id.org/def/testontw#Strawberry> <http://www.w3.org/2000/01/rdf-schema#comment> "Sweet tasting berry, red in colour" .
+# 
+# https://w3id.org/def/testontw#SweetFruit
+<https://w3id.org/def/testontw#SweetFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#SweetFruit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Fruit> .
+<https://w3id.org/def/testontw#SweetFruit> <http://www.w3.org/2000/01/rdf-schema#comment> "Fruits with sweet taste" .
+# 
+# https://w3id.org/def/testontw#TraditionalDishes
+<https://w3id.org/def/testontw#TraditionalDishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#TraditionalDishes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Dishes> .
+<https://w3id.org/def/testontw#TraditionalDishes> <http://www.w3.org/2000/01/rdf-schema#comment> "Meals associated with confort food" .
+# 
+# https://w3id.org/def/testontw#Vegetables
+<https://w3id.org/def/testontw#Vegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Vegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Edibles> .
+<https://w3id.org/def/testontw#Vegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Other kind of vegetables" .
+# 
+# https://w3id.org/def/testontw#Wine
+<https://w3id.org/def/testontw#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#Drinkables> .
+<https://w3id.org/def/testontw#Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "Alcoholic beverage made from fermented grape juice" .
+<https://w3id.org/def/testontw#Wine> <https://w3id.org/def/testontw#sameAs> "https://dbpedia.org/page/Wine" .
+# 
+# https://w3id.org/def/testontw#WineBody
+<https://w3id.org/def/testontw#WineBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#WineTaste> .
+<https://w3id.org/def/testontw#WineBody> <http://www.w3.org/2000/01/rdf-schema#comment> "The sensation causes by the wine in the mouth when sipping it" .
+# 
+# https://w3id.org/def/testontw#WineCharasteristics
+<https://w3id.org/def/testontw#WineCharasteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineCharasteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "This class collects the properties needed to describe wine in terms of flavour and aspect" .
+# 
+# https://w3id.org/def/testontw#WineColour
+<https://w3id.org/def/testontw#WineColour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineColour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#WineCharasteristics> .
+<https://w3id.org/def/testontw#WineColour> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine's visual qualities" .
+# 
+# https://w3id.org/def/testontw#WineFlavour
+<https://w3id.org/def/testontw#WineFlavour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineFlavour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#WineTaste> .
+<https://w3id.org/def/testontw#WineFlavour> <http://www.w3.org/2000/01/rdf-schema#comment> "The flavours that can be appreciated when tasting the wine" .
+# 
+# https://w3id.org/def/testontw#WineSugar
+<https://w3id.org/def/testontw#WineSugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineSugar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#WineTaste> .
+<https://w3id.org/def/testontw#WineSugar> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the sweetness of the wine" .
+# 
+# https://w3id.org/def/testontw#WineTaste
+<https://w3id.org/def/testontw#WineTaste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineTaste> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/testontw#WineCharasteristics> .
+<https://w3id.org/def/testontw#WineTaste> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the flavour in terms of various aspects" .
+# 
+# https://w3id.org/def/testontw#WineType
+<https://w3id.org/def/testontw#WineType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#WineType> <http://www.w3.org/2000/01/rdf-schema#comment> "Types of wine, depending of grapes used in the preparation" .
+# 
+# https://w3id.org/def/testontw#Winery
+<https://w3id.org/def/testontw#Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/testontw#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine makers" .
+<https://w3id.org/def/testontw#Winery> <https://w3id.org/def/testontw#sameAs> "https://dbpedia.org/page/Winery" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/testontw#Albariño
+<https://w3id.org/def/testontw#Albariño> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Albariño> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineType> .
+<https://w3id.org/def/testontw#Albariño> <https://w3id.org/def/testontw#hasWine> <https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> .
+# 
+# https://w3id.org/def/testontw#Alto_Moncayo
+<https://w3id.org/def/testontw#Alto_Moncayo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Alto_Moncayo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#Alto_Moncayo> <https://w3id.org/def/testontw#locatedIn> <https://w3id.org/def/testontw#Campo_de_Borja> .
+<https://w3id.org/def/testontw#Alto_Moncayo> <https://w3id.org/def/testontw#makesWine> <https://w3id.org/def/testontw#Aquilon_Garnacha> .
+# 
+# https://w3id.org/def/testontw#Altos_de_Rioja
+<https://w3id.org/def/testontw#Altos_de_Rioja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Altos_de_Rioja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Winery> .
+# 
+# https://w3id.org/def/testontw#Aquilon_Garnacha
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasBody> <https://w3id.org/def/testontw#Full> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasColour> <https://w3id.org/def/testontw#Red> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasFlavour> <https://w3id.org/def/testontw#Strong> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasMaker> <https://w3id.org/def/testontw#Alto_Moncayo> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasRegion> <https://w3id.org/def/testontw#Campo_de_Borja> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasSugar> <https://w3id.org/def/testontw#Dry> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasType> <https://w3id.org/def/testontw#Grenache> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#madeWithGrape> <https://w3id.org/def/testontw#Garnacha> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasConservationTemperature> "16C" .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasDesignation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/testontw#Aquilon_Garnacha> <https://w3id.org/def/testontw#hasYears> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/def/testontw#Bolognese
+<https://w3id.org/def/testontw#Bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Bolognese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#ItalianDishes> .
+<https://w3id.org/def/testontw#Bolognese> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#Spaguetti> .
+<https://w3id.org/def/testontw#Bolognese> <https://w3id.org/def/testontw#hasPairing> <https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> .
+# 
+# https://w3id.org/def/testontw#Bruto
+<https://w3id.org/def/testontw#Bruto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Bruto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasBody> <https://w3id.org/def/testontw#Full> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasColour> <https://w3id.org/def/testontw#Red> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasFlavour> <https://w3id.org/def/testontw#Moderate> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasMaker> <https://w3id.org/def/testontw#Juan_Gil> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasRegion> <https://w3id.org/def/testontw#Jumilla> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasSugar> <https://w3id.org/def/testontw#Dry> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasType> <https://w3id.org/def/testontw#Monastrel> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#madeWithGrape> <https://w3id.org/def/testontw#Monastrell> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasConservationTemperature> "16C" .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasDesignation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasRating> "4.5"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/testontw#Bruto> <https://w3id.org/def/testontw#hasYears> "6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/def/testontw#Caiño_blanco
+<https://w3id.org/def/testontw#Caiño_blanco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Caiño_blanco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#Caiño_blanco> <https://w3id.org/def/testontw#madeIntoWine> <https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> .
+# 
+# https://w3id.org/def/testontw#Camarosa
+<https://w3id.org/def/testontw#Camarosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Camarosa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Strawberry> .
+<https://w3id.org/def/testontw#Camarosa> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Strawberry_cake> .
+# 
+# https://w3id.org/def/testontw#Campo_de_Borja
+<https://w3id.org/def/testontw#Campo_de_Borja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Campo_de_Borja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#Campo_de_Borja> <https://w3id.org/def/testontw#hasWinery> <https://w3id.org/def/testontw#Alto_Moncayo> .
+# 
+# https://w3id.org/def/testontw#Carrot
+<https://w3id.org/def/testontw#Carrot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Carrot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Vegetables> .
+<https://w3id.org/def/testontw#Carrot> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Cocido> .
+# 
+# https://w3id.org/def/testontw#Chardonnay
+<https://w3id.org/def/testontw#Chardonnay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Chardonnay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineType> .
+# 
+# https://w3id.org/def/testontw#Cocido
+<https://w3id.org/def/testontw#Cocido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Cocido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#TraditionalDishes> .
+<https://w3id.org/def/testontw#Cocido> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#Carrot> .
+<https://w3id.org/def/testontw#Cocido> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#Red_meats> .
+<https://w3id.org/def/testontw#Cocido> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#White_meats> .
+<https://w3id.org/def/testontw#Cocido> <https://w3id.org/def/testontw#hasPairing> <https://w3id.org/def/testontw#Bruto> .
+# 
+# https://w3id.org/def/testontw#Delicate
+<https://w3id.org/def/testontw#Delicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Delicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineFlavour> .
+# 
+# https://w3id.org/def/testontw#Dry
+<https://w3id.org/def/testontw#Dry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Dry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineSugar> .
+# 
+# https://w3id.org/def/testontw#Feminello
+<https://w3id.org/def/testontw#Feminello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Feminello> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Lemon> .
+<https://w3id.org/def/testontw#Feminello> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Lemon_cake> .
+# 
+# https://w3id.org/def/testontw#Full
+<https://w3id.org/def/testontw#Full> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Full> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineBody> .
+# 
+# https://w3id.org/def/testontw#Garnacha
+<https://w3id.org/def/testontw#Garnacha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Garnacha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#Garnacha> <https://w3id.org/def/testontw#madeIntoWine> <https://w3id.org/def/testontw#Aquilon_Garnacha> .
+# 
+# https://w3id.org/def/testontw#Grenache
+<https://w3id.org/def/testontw#Grenache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Grenache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineType> .
+<https://w3id.org/def/testontw#Grenache> <https://w3id.org/def/testontw#hasWine> <https://w3id.org/def/testontw#Aquilon_Garnacha> .
+# 
+# https://w3id.org/def/testontw#Jerez-Xeres-Sherry
+<https://w3id.org/def/testontw#Jerez-Xeres-Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Jerez-Xeres-Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#Jerez-Xeres-Sherry> <https://w3id.org/def/testontw#hasWinery> <https://w3id.org/def/testontw#Valdespino> .
+# 
+# https://w3id.org/def/testontw#Juan_Gil
+<https://w3id.org/def/testontw#Juan_Gil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Juan_Gil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#Juan_Gil> <https://w3id.org/def/testontw#locatedIn> <https://w3id.org/def/testontw#Jumilla> .
+<https://w3id.org/def/testontw#Juan_Gil> <https://w3id.org/def/testontw#makesWine> <https://w3id.org/def/testontw#Bruto> .
+# 
+# https://w3id.org/def/testontw#Jumilla
+<https://w3id.org/def/testontw#Jumilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Jumilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#Jumilla> <https://w3id.org/def/testontw#hasWinery> <https://w3id.org/def/testontw#Juan_Gil> .
+# 
+# https://w3id.org/def/testontw#Lemon_cake
+<https://w3id.org/def/testontw#Lemon_cake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Lemon_cake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Desserts> .
+<https://w3id.org/def/testontw#Lemon_cake> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#Feminello> .
+<https://w3id.org/def/testontw#Lemon_cake> <https://w3id.org/def/testontw#hasPairing> <https://w3id.org/def/testontw#Toneles_Moscatel> .
+# 
+# https://w3id.org/def/testontw#Light
+<https://w3id.org/def/testontw#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineBody> .
+# 
+# https://w3id.org/def/testontw#Loureiro
+<https://w3id.org/def/testontw#Loureiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Loureiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#Loureiro> <https://w3id.org/def/testontw#madeIntoWine> <https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> .
+# 
+# https://w3id.org/def/testontw#Medium
+<https://w3id.org/def/testontw#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineBody> .
+# 
+# https://w3id.org/def/testontw#Moderate
+<https://w3id.org/def/testontw#Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineFlavour> .
+# 
+# https://w3id.org/def/testontw#Monastrel
+<https://w3id.org/def/testontw#Monastrel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Monastrel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineType> .
+<https://w3id.org/def/testontw#Monastrel> <https://w3id.org/def/testontw#hasWine> <https://w3id.org/def/testontw#Bruto> .
+# 
+# https://w3id.org/def/testontw#Monastrell
+<https://w3id.org/def/testontw#Monastrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Monastrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#Monastrell> <https://w3id.org/def/testontw#madeIntoWine> <https://w3id.org/def/testontw#Bruto> .
+# 
+# https://w3id.org/def/testontw#Moscatel_de_Alejandría
+<https://w3id.org/def/testontw#Moscatel_de_Alejandría> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Moscatel_de_Alejandría> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Grape> .
+<https://w3id.org/def/testontw#Moscatel_de_Alejandría> <https://w3id.org/def/testontw#madeIntoWine> <https://w3id.org/def/testontw#Toneles_Moscatel> .
+# 
+# https://w3id.org/def/testontw#OffDry
+<https://w3id.org/def/testontw#OffDry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#OffDry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineSugar> .
+# 
+# https://w3id.org/def/testontw#Red
+<https://w3id.org/def/testontw#Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineColour> .
+# 
+# https://w3id.org/def/testontw#Red_meats
+<https://w3id.org/def/testontw#Red_meats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Red_meats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Meat> .
+<https://w3id.org/def/testontw#Red_meats> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Cocido> .
+# 
+# https://w3id.org/def/testontw#Rias_Baixas
+<https://w3id.org/def/testontw#Rias_Baixas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Rias_Baixas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Region> .
+<https://w3id.org/def/testontw#Rias_Baixas> <https://w3id.org/def/testontw#hasWinery> <https://w3id.org/def/testontw#Terras_Gauda> .
+# 
+# https://w3id.org/def/testontw#Ribera_del_Duero
+<https://w3id.org/def/testontw#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Region> .
+# 
+# https://w3id.org/def/testontw#Ribera_del_Duero_Red
+<https://w3id.org/def/testontw#Ribera_del_Duero_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Ribera_del_Duero_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineType> .
+# 
+# https://w3id.org/def/testontw#Rose
+<https://w3id.org/def/testontw#Rose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Rose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineColour> .
+# 
+# https://w3id.org/def/testontw#Seafood_soup
+<https://w3id.org/def/testontw#Seafood_soup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Seafood_soup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Soups> .
+<https://w3id.org/def/testontw#Seafood_soup> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#Shellfish> .
+<https://w3id.org/def/testontw#Seafood_soup> <https://w3id.org/def/testontw#hasPairing> <https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> .
+# 
+# https://w3id.org/def/testontw#Shellfish
+<https://w3id.org/def/testontw#Shellfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Shellfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Seafood> .
+<https://w3id.org/def/testontw#Shellfish> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Seafood_soup> .
+# 
+# https://w3id.org/def/testontw#Sherry
+<https://w3id.org/def/testontw#Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineType> .
+<https://w3id.org/def/testontw#Sherry> <https://w3id.org/def/testontw#hasWine> <https://w3id.org/def/testontw#Toneles_Moscatel> .
+# 
+# https://w3id.org/def/testontw#Spaguetti
+<https://w3id.org/def/testontw#Spaguetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Spaguetti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Pasta> .
+<https://w3id.org/def/testontw#Spaguetti> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Bolognese> .
+# 
+# https://w3id.org/def/testontw#Strawberry_cake
+<https://w3id.org/def/testontw#Strawberry_cake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Strawberry_cake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Desserts> .
+<https://w3id.org/def/testontw#Strawberry_cake> <https://w3id.org/def/testontw#hasFood> <https://w3id.org/def/testontw#Camarosa> .
+<https://w3id.org/def/testontw#Strawberry_cake> <https://w3id.org/def/testontw#hasPairing> <https://w3id.org/def/testontw#Toneles_Moscatel> .
+# 
+# https://w3id.org/def/testontw#Strong
+<https://w3id.org/def/testontw#Strong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Strong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineFlavour> .
+# 
+# https://w3id.org/def/testontw#Sweet
+<https://w3id.org/def/testontw#Sweet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Sweet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineSugar> .
+# 
+# https://w3id.org/def/testontw#Terras_Gauda
+<https://w3id.org/def/testontw#Terras_Gauda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Terras_Gauda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#Terras_Gauda> <https://w3id.org/def/testontw#locatedIn> <https://w3id.org/def/testontw#Rias_Baixas> .
+<https://w3id.org/def/testontw#Terras_Gauda> <https://w3id.org/def/testontw#makesWine> <https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> .
+# 
+# https://w3id.org/def/testontw#Terras_Gauda_O_Rosal
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasBody> <https://w3id.org/def/testontw#Medium> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasColour> <https://w3id.org/def/testontw#White> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasFlavour> <https://w3id.org/def/testontw#Strong> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasMaker> <https://w3id.org/def/testontw#Terras_Gauda> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasRegion> <https://w3id.org/def/testontw#Rias_Baixas> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasSugar> <https://w3id.org/def/testontw#Dry> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasType> <https://w3id.org/def/testontw#Albariño> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#madeWithGrape> <https://w3id.org/def/testontw#Caiño_blanco> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#madeWithGrape> <https://w3id.org/def/testontw#Loureiro> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasConservationTemperature> "10C" .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasDesignation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasRating> "4.3"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/testontw#Terras_Gauda_O_Rosal> <https://w3id.org/def/testontw#hasYears> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/def/testontw#Toneles_Moscatel
+<https://w3id.org/def/testontw#Toneles_Moscatel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Wine> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasBody> <https://w3id.org/def/testontw#Medium> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasColour> <https://w3id.org/def/testontw#Rose> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasFlavour> <https://w3id.org/def/testontw#Moderate> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasMaker> <https://w3id.org/def/testontw#Valdespino> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasRegion> <https://w3id.org/def/testontw#Jerez-Xeres-Sherry> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasSugar> <https://w3id.org/def/testontw#Sweet> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasType> <https://w3id.org/def/testontw#Sherry> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#madeWithGrape> <https://w3id.org/def/testontw#Moscatel_de_Alejandría> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasConservationTemperature> "15C" .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasDesignation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasRating> "4.8"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/testontw#Toneles_Moscatel> <https://w3id.org/def/testontw#hasYears> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/def/testontw#Toro
+<https://w3id.org/def/testontw#Toro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Toro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Region> .
+# 
+# https://w3id.org/def/testontw#Toro_Albala
+<https://w3id.org/def/testontw#Toro_Albala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Toro_Albala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Winery> .
+# 
+# https://w3id.org/def/testontw#Valdespino
+<https://w3id.org/def/testontw#Valdespino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#Valdespino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Winery> .
+<https://w3id.org/def/testontw#Valdespino> <https://w3id.org/def/testontw#locatedIn> <https://w3id.org/def/testontw#Jerez-Xeres-Sherry> .
+<https://w3id.org/def/testontw#Valdespino> <https://w3id.org/def/testontw#makesWine> <https://w3id.org/def/testontw#Toneles_Moscatel> .
+# 
+# https://w3id.org/def/testontw#White
+<https://w3id.org/def/testontw#White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#WineColour> .
+# 
+# https://w3id.org/def/testontw#White_meats
+<https://w3id.org/def/testontw#White_meats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/testontw#White_meats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/testontw#Fowl> .
+<https://w3id.org/def/testontw#White_meats> <https://w3id.org/def/testontw#usedToPrepare> <https://w3id.org/def/testontw#Cocido> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid3 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Winery> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#WineType> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#WineCharasteristics> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Region> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Consumables> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Edibles> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Drinkables> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Dishes> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Vegetables> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Seafood> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Pasta> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Meat> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Fruit> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/def/testontw#Fowl> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#hd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#arguments> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#hd> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> .
+<http://www.w3.org/2003/11/swrlb#equal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid26 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/testontw#Wine> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/testontw#hasRegion> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#hd> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/testontw#hasDesignation> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/testontw#hasDesignation> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/testontw#hasRating> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/testontw#Wine> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#arguments> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#r> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid43 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/testontw#Excellent> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid44 <http://www.w3.org/2003/11/swrl#body> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid46 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/def/testontw#hasRating> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/testontw#Wine> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#arguments> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#r> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#arguments> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3.99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#w> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/2003/11/swrl#head> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid58 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/def/testontw#Good> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

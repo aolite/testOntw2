@@ -1,0 +1,209 @@
+{
+  "@context" : {
+    "Dishes" : {
+      "@id" : "https://w3id.org/def/testontw#Dishes"
+    },
+    "WineType" : {
+      "@id" : "https://w3id.org/def/testontw#WineType"
+    },
+    "hasRating" : {
+      "@id" : "https://w3id.org/def/testontw#hasRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Winery" : {
+      "@id" : "https://w3id.org/def/testontw#Winery"
+    },
+    "WineTaste" : {
+      "@id" : "https://w3id.org/def/testontw#WineTaste"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Aging" : {
+      "@id" : "https://w3id.org/def/testontw#Aging"
+    },
+    "hasFood" : {
+      "@id" : "https://w3id.org/def/testontw#hasFood",
+      "@type" : "@id"
+    },
+    "hasWinery" : {
+      "@id" : "https://w3id.org/def/testontw#hasWinery",
+      "@type" : "@id"
+    },
+    "Meat" : {
+      "@id" : "https://w3id.org/def/testontw#Meat"
+    },
+    "hasMaker" : {
+      "@id" : "https://w3id.org/def/testontw#hasMaker",
+      "@type" : "@id"
+    },
+    "Fruit" : {
+      "@id" : "https://w3id.org/def/testontw#Fruit"
+    },
+    "hasColour" : {
+      "@id" : "https://w3id.org/def/testontw#hasColour",
+      "@type" : "@id"
+    },
+    "WineCharasteristics" : {
+      "@id" : "https://w3id.org/def/testontw#WineCharasteristics"
+    },
+    "Drinkables" : {
+      "@id" : "https://w3id.org/def/testontw#Drinkables"
+    },
+    "WineColour" : {
+      "@id" : "https://w3id.org/def/testontw#WineColour"
+    },
+    "hasFlavour" : {
+      "@id" : "https://w3id.org/def/testontw#hasFlavour",
+      "@type" : "@id"
+    },
+    "NonSweetFruit" : {
+      "@id" : "https://w3id.org/def/testontw#NonSweetFruit"
+    },
+    "Edibles" : {
+      "@id" : "https://w3id.org/def/testontw#Edibles"
+    },
+    "Desserts" : {
+      "@id" : "https://w3id.org/def/testontw#Desserts"
+    },
+    "hasAging" : {
+      "@id" : "https://w3id.org/def/testontw#hasAging",
+      "@type" : "@id"
+    },
+    "Good" : {
+      "@id" : "https://w3id.org/def/testontw#Good"
+    },
+    "Soups" : {
+      "@id" : "https://w3id.org/def/testontw#Soups"
+    },
+    "WineSugar" : {
+      "@id" : "https://w3id.org/def/testontw#WineSugar"
+    },
+    "hasWine" : {
+      "@id" : "https://w3id.org/def/testontw#hasWine",
+      "@type" : "@id"
+    },
+    "hasCharacteristics" : {
+      "@id" : "https://w3id.org/def/testontw#hasCharacteristics",
+      "@type" : "@id"
+    },
+    "TraditionalDishes" : {
+      "@id" : "https://w3id.org/def/testontw#TraditionalDishes"
+    },
+    "Excellent" : {
+      "@id" : "https://w3id.org/def/testontw#Excellent"
+    },
+    "Vegetables" : {
+      "@id" : "https://w3id.org/def/testontw#Vegetables"
+    },
+    "hasType" : {
+      "@id" : "https://w3id.org/def/testontw#hasType",
+      "@type" : "@id"
+    },
+    "madeWithGrape" : {
+      "@id" : "https://w3id.org/def/testontw#madeWithGrape",
+      "@type" : "@id"
+    },
+    "Seafood" : {
+      "@id" : "https://w3id.org/def/testontw#Seafood"
+    },
+    "Grape" : {
+      "@id" : "https://w3id.org/def/testontw#Grape"
+    },
+    "hasDesignation" : {
+      "@id" : "https://w3id.org/def/testontw#hasDesignation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasBody" : {
+      "@id" : "https://w3id.org/def/testontw#hasBody",
+      "@type" : "@id"
+    },
+    "Strawberry" : {
+      "@id" : "https://w3id.org/def/testontw#Strawberry"
+    },
+    "Rating" : {
+      "@id" : "https://w3id.org/def/testontw#Rating"
+    },
+    "hasPairing" : {
+      "@id" : "https://w3id.org/def/testontw#hasPairing",
+      "@type" : "@id"
+    },
+    "Fowl" : {
+      "@id" : "https://w3id.org/def/testontw#Fowl"
+    },
+    "Consumables" : {
+      "@id" : "https://w3id.org/def/testontw#Consumables"
+    },
+    "Crianza" : {
+      "@id" : "https://w3id.org/def/testontw#Crianza"
+    },
+    "Lemon" : {
+      "@id" : "https://w3id.org/def/testontw#Lemon"
+    },
+    "SweetFruit" : {
+      "@id" : "https://w3id.org/def/testontw#SweetFruit"
+    },
+    "hasSugar" : {
+      "@id" : "https://w3id.org/def/testontw#hasSugar",
+      "@type" : "@id"
+    },
+    "locatedIn" : {
+      "@id" : "https://w3id.org/def/testontw#locatedIn",
+      "@type" : "@id"
+    },
+    "Reserva" : {
+      "@id" : "https://w3id.org/def/testontw#Reserva"
+    },
+    "makesWine" : {
+      "@id" : "https://w3id.org/def/testontw#makesWine",
+      "@type" : "@id"
+    },
+    "madeIntoWine" : {
+      "@id" : "https://w3id.org/def/testontw#madeIntoWine",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "https://w3id.org/def/testontw#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Pasta" : {
+      "@id" : "https://w3id.org/def/testontw#Pasta"
+    },
+    "GranReserva" : {
+      "@id" : "https://w3id.org/def/testontw#GranReserva"
+    },
+    "hasRegion" : {
+      "@id" : "https://w3id.org/def/testontw#hasRegion",
+      "@type" : "@id"
+    },
+    "Region" : {
+      "@id" : "https://w3id.org/def/testontw#Region"
+    },
+    "WineBody" : {
+      "@id" : "https://w3id.org/def/testontw#WineBody"
+    },
+    "WineFlavour" : {
+      "@id" : "https://w3id.org/def/testontw#WineFlavour"
+    },
+    "hasYears" : {
+      "@id" : "https://w3id.org/def/testontw#hasYears",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "usedToPrepare" : {
+      "@id" : "https://w3id.org/def/testontw#usedToPrepare",
+      "@type" : "@id"
+    },
+    "hasConservationTemperature" : {
+      "@id" : "https://w3id.org/def/testontw#hasConservationTemperature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Wine" : {
+      "@id" : "https://w3id.org/def/testontw#Wine"
+    },
+    "ItalianDishes" : {
+      "@id" : "https://w3id.org/def/testontw#ItalianDishes"
+    }
+  }
+}

@@ -1,0 +1,948 @@
+@prefix : <https://w3id.org/def/testontw#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/testontw#> .
+
+<https://w3id.org/def/testontw> rdf:type owl:Ontology ;
+                                 <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                 rdfs:comment """Wine Ontology for Recommendation System
+Authors: Yago Estévez Davila, José David Zapata García""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/testontw#sameAs
+:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/testontw#hasAging
+:hasAging rdf:type owl:ObjectProperty ;
+          rdfs:domain :Wine ;
+          rdfs:range :Aging ;
+          rdfs:comment "Provides information about the wine aging category" .
+
+
+###  https://w3id.org/def/testontw#hasBody
+:hasBody rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :hasCharacteristics ;
+         rdfs:domain :Wine ;
+         rdfs:range :WineBody ;
+         rdfs:comment "The wine body can be light, medium or full" .
+
+
+###  https://w3id.org/def/testontw#hasCharacteristics
+:hasCharacteristics rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Wine ;
+                    rdfs:range :WineCharasteristics ;
+                    rdfs:comment "Provides information about the wine's organoleptic properties" .
+
+
+###  https://w3id.org/def/testontw#hasColour
+:hasColour rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasCharacteristics ;
+           rdfs:domain :Wine ;
+           rdfs:range :WineColour ;
+           rdfs:comment "The wine colour can be red, rose or white" .
+
+
+###  https://w3id.org/def/testontw#hasFlavour
+:hasFlavour rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasCharacteristics ;
+            rdfs:domain :Wine ;
+            rdfs:range :WineFlavour ;
+            rdfs:comment "The wine flavour can be delicate, moderate or strong" .
+
+
+###  https://w3id.org/def/testontw#hasFood
+:hasFood rdf:type owl:ObjectProperty ;
+         owl:inverseOf :usedToPrepare ;
+         rdfs:domain :Dishes ;
+         rdfs:range :Edibles ;
+         rdfs:comment "Provides information about the ingredients used for each course" .
+
+
+###  https://w3id.org/def/testontw#hasMaker
+:hasMaker rdf:type owl:ObjectProperty ;
+          owl:inverseOf :makesWine ;
+          rdfs:domain :Wine ;
+          rdfs:range :Winery ;
+          rdfs:comment "Associates each wine with its correspondering winery" .
+
+
+###  https://w3id.org/def/testontw#hasPairing
+:hasPairing rdf:type owl:ObjectProperty ;
+            rdfs:domain :Dishes ;
+            rdfs:range :Wine ;
+            rdfs:comment "Provides recommendations for food and wine pairing" .
+
+
+###  https://w3id.org/def/testontw#hasRegion
+:hasRegion rdf:type owl:ObjectProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range :Region ;
+           rdfs:comment "Provides the region where the wine was produced" .
+
+
+###  https://w3id.org/def/testontw#hasSugar
+:hasSugar rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasCharacteristics ;
+          rdfs:domain :Wine ;
+          rdfs:range :WineSugar ;
+          rdfs:comment "Wine's sweetnes, can be dry, offdry or sweet" .
+
+
+###  https://w3id.org/def/testontw#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain :Wine ;
+         rdfs:range :WineType ;
+         rdfs:comment "Used to associated each wine with its corresponding type" .
+
+
+###  https://w3id.org/def/testontw#hasWine
+:hasWine rdf:type owl:ObjectProperty ;
+         rdfs:domain :WineType ;
+         rdfs:range :Wine ;
+         rdfs:comment "Provides the wines made by each winery" .
+
+
+###  https://w3id.org/def/testontw#hasWinery
+:hasWinery rdf:type owl:ObjectProperty ;
+           owl:inverseOf :locatedIn ;
+           rdfs:domain :Region ;
+           rdfs:range :Winery ;
+           rdfs:comment "Associates each winery with its region" .
+
+
+###  https://w3id.org/def/testontw#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Winery ;
+           rdfs:range :Region ;
+           rdfs:comment "Inverse of hasWinery" .
+
+
+###  https://w3id.org/def/testontw#madeIntoWine
+:madeIntoWine rdf:type owl:ObjectProperty ;
+              owl:inverseOf :madeWithGrape ;
+              rdfs:domain :Grape ;
+              rdfs:range :Wine ;
+              rdfs:comment "Provides information about the wines made from a given grape" .
+
+
+###  https://w3id.org/def/testontw#madeWithGrape
+:madeWithGrape rdf:type owl:ObjectProperty ;
+               rdfs:domain :Wine ;
+               rdfs:range :Grape ;
+               rdfs:comment "Provides information about the grape(s) used to make a given wine" .
+
+
+###  https://w3id.org/def/testontw#makesWine
+:makesWine rdf:type owl:ObjectProperty ;
+           rdfs:domain :Winery ;
+           rdfs:range :Wine ;
+           rdfs:comment "Provides the list of wines made by a given winery" .
+
+
+###  https://w3id.org/def/testontw#usedToPrepare
+:usedToPrepare rdf:type owl:ObjectProperty ;
+               rdfs:domain :Edibles ;
+               rdfs:range :Dishes ;
+               rdfs:comment "Provides information about the courses that can be made with each food" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/testontw#hasConservationTemperature
+:hasConservationTemperature rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Wine ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Recommended preservation temperature for the wine as given by its maker" .
+
+
+###  https://w3id.org/def/testontw#hasDesignation
+:hasDesignation rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Wine ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "Provides information about wine's origin designation" .
+
+
+###  https://w3id.org/def/testontw#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range xsd:float ;
+           rdfs:comment "Numerical mean rating between 1.0 and 5.0" .
+
+
+###  https://w3id.org/def/testontw#hasYears
+:hasYears rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Wine ;
+          rdfs:range xsd:int ;
+          rdfs:comment "Wine's aging years" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/testontw#Aging
+:Aging rdf:type owl:Class ;
+       rdfs:subClassOf :WineCharasteristics ;
+       rdfs:comment "This class provides information about the wine's aging" ;
+       :sameAs "https://dbpedia.org/page/Aging_of_wine" .
+
+
+###  https://w3id.org/def/testontw#Consumables
+:Consumables rdf:type owl:Class ;
+             rdfs:comment "Everything that is able for consumption" .
+
+
+###  https://w3id.org/def/testontw#Crianza
+:Crianza rdf:type owl:Class ;
+         rdfs:subClassOf :Aging ;
+         rdfs:comment "These wines usually have 24 or less months of aging" .
+
+
+###  https://w3id.org/def/testontw#Desserts
+:Desserts rdf:type owl:Class ;
+          rdfs:subClassOf :Dishes ;
+          owl:disjointWith :ItalianDishes ,
+                           :Soups ;
+          rdfs:comment "Sweet meals" .
+
+
+###  https://w3id.org/def/testontw#Dishes
+:Dishes rdf:type owl:Class ;
+        rdfs:subClassOf :Consumables ;
+        rdfs:comment "Different courses made with various ingredients" .
+
+
+###  https://w3id.org/def/testontw#Drinkables
+:Drinkables rdf:type owl:Class ;
+            rdfs:subClassOf :Consumables ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasMaker ;
+                              owl:allValuesFrom :Winery
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasYears ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:int
+                            ] ;
+            rdfs:comment "Drinks and simmilar" .
+
+
+###  https://w3id.org/def/testontw#Edibles
+:Edibles rdf:type owl:Class ;
+         rdfs:subClassOf :Consumables ;
+         rdfs:comment "Ingredients used for course meals" .
+
+
+###  https://w3id.org/def/testontw#Excellent
+:Excellent rdf:type owl:Class ;
+           rdfs:subClassOf :Rating ;
+           owl:disjointWith :Good ;
+           rdfs:comment "Items with puntuation higher or equal than 4 out of 5" .
+
+
+###  https://w3id.org/def/testontw#Fowl
+:Fowl rdf:type owl:Class ;
+      rdfs:subClassOf :Edibles ;
+      rdfs:comment "White meat like chicken, rabbit, etc." .
+
+
+###  https://w3id.org/def/testontw#Fruit
+:Fruit rdf:type owl:Class ;
+       rdfs:subClassOf :Edibles ;
+       rdfs:comment "Vegetables with pulp arount the seed(s)" .
+
+
+###  https://w3id.org/def/testontw#Good
+:Good rdf:type owl:Class ;
+      rdfs:subClassOf :Rating ;
+      rdfs:comment "Items with puntuation higher between 3 and 3.99 out of 5" .
+
+
+###  https://w3id.org/def/testontw#GranReserva
+:GranReserva rdf:type owl:Class ;
+             rdfs:subClassOf :Aging ;
+             rdfs:comment "Wines with at least 60 months of aging" .
+
+
+###  https://w3id.org/def/testontw#Grape
+:Grape rdf:type owl:Class ;
+       rdfs:subClassOf :SweetFruit ;
+       owl:disjointWith :Strawberry ;
+       rdfs:comment "Fruit used to make wine" ;
+       :sameAs "https://dbpedia.org/page/Grape" .
+
+
+###  https://w3id.org/def/testontw#ItalianDishes
+:ItalianDishes rdf:type owl:Class ;
+               rdfs:subClassOf :Dishes ;
+               owl:disjointWith :Soups ;
+               rdfs:comment "Traditional italian course meals" .
+
+
+###  https://w3id.org/def/testontw#Lemon
+:Lemon rdf:type owl:Class ;
+       rdfs:subClassOf :NonSweetFruit ;
+       rdfs:comment "Sour tasting yellow fruit" .
+
+
+###  https://w3id.org/def/testontw#Meat
+:Meat rdf:type owl:Class ;
+      rdfs:subClassOf :Edibles ;
+      rdfs:comment "Red meats like beef or pig" .
+
+
+###  https://w3id.org/def/testontw#NonSweetFruit
+:NonSweetFruit rdf:type owl:Class ;
+               rdfs:subClassOf :Fruit ;
+               owl:disjointWith :SweetFruit ;
+               rdfs:comment "Fruits with a sour or acid taste" .
+
+
+###  https://w3id.org/def/testontw#Pasta
+:Pasta rdf:type owl:Class ;
+       rdfs:subClassOf :Edibles ;
+       rdfs:comment "Starchy food asociated with italian cuisine" .
+
+
+###  https://w3id.org/def/testontw#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Mean puntuation obtained from customers" .
+
+
+###  https://w3id.org/def/testontw#Region
+:Region rdf:type owl:Class ;
+        rdfs:comment "Geographical delimitations" .
+
+
+###  https://w3id.org/def/testontw#Reserva
+:Reserva rdf:type owl:Class ;
+         rdfs:subClassOf :Aging ;
+         rdfs:comment "These wines have been aged between 25 and 59 months" .
+
+
+###  https://w3id.org/def/testontw#Seafood
+:Seafood rdf:type owl:Class ;
+         rdfs:subClassOf :Edibles ;
+         rdfs:comment "Shellfish or seafish, excludes sweet water fish" .
+
+
+###  https://w3id.org/def/testontw#Soups
+:Soups rdf:type owl:Class ;
+       rdfs:subClassOf :Dishes ;
+       rdfs:comment "Meals with liquid consistence" .
+
+
+###  https://w3id.org/def/testontw#Strawberry
+:Strawberry rdf:type owl:Class ;
+            rdfs:subClassOf :SweetFruit ;
+            rdfs:comment "Sweet tasting berry, red in colour" .
+
+
+###  https://w3id.org/def/testontw#SweetFruit
+:SweetFruit rdf:type owl:Class ;
+            rdfs:subClassOf :Fruit ;
+            rdfs:comment "Fruits with sweet taste" .
+
+
+###  https://w3id.org/def/testontw#TraditionalDishes
+:TraditionalDishes rdf:type owl:Class ;
+                   rdfs:subClassOf :Dishes ;
+                   rdfs:comment "Meals associated with confort food" .
+
+
+###  https://w3id.org/def/testontw#Vegetables
+:Vegetables rdf:type owl:Class ;
+            rdfs:subClassOf :Edibles ;
+            rdfs:comment "Other kind of vegetables" .
+
+
+###  https://w3id.org/def/testontw#Wine
+:Wine rdf:type owl:Class ;
+      rdfs:subClassOf :Drinkables ;
+      rdfs:comment "Alcoholic beverage made from fermented grape juice" ;
+      :sameAs "https://dbpedia.org/page/Wine" .
+
+
+###  https://w3id.org/def/testontw#WineBody
+:WineBody rdf:type owl:Class ;
+          rdfs:subClassOf :WineTaste ;
+          rdfs:comment "The sensation causes by the wine in the mouth when sipping it" .
+
+
+###  https://w3id.org/def/testontw#WineCharasteristics
+:WineCharasteristics rdf:type owl:Class ;
+                     rdfs:comment "This class collects the properties needed to describe wine in terms of flavour and aspect" .
+
+
+###  https://w3id.org/def/testontw#WineColour
+:WineColour rdf:type owl:Class ;
+            rdfs:subClassOf :WineCharasteristics ;
+            rdfs:comment "Wine's visual qualities" .
+
+
+###  https://w3id.org/def/testontw#WineFlavour
+:WineFlavour rdf:type owl:Class ;
+             rdfs:subClassOf :WineTaste ;
+             rdfs:comment "The flavours that can be appreciated when tasting the wine" .
+
+
+###  https://w3id.org/def/testontw#WineSugar
+:WineSugar rdf:type owl:Class ;
+           rdfs:subClassOf :WineTaste ;
+           rdfs:comment "Describes the sweetness of the wine" .
+
+
+###  https://w3id.org/def/testontw#WineTaste
+:WineTaste rdf:type owl:Class ;
+           rdfs:subClassOf :WineCharasteristics ;
+           rdfs:comment "Describes the flavour in terms of various aspects" .
+
+
+###  https://w3id.org/def/testontw#WineType
+:WineType rdf:type owl:Class ;
+          rdfs:comment "Types of wine, depending of grapes used in the preparation" .
+
+
+###  https://w3id.org/def/testontw#Winery
+:Winery rdf:type owl:Class ;
+        rdfs:comment "Wine makers" ;
+        :sameAs "https://dbpedia.org/page/Winery" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/testontw#Albariño
+:Albariño rdf:type owl:NamedIndividual ,
+                   :WineType ;
+          :hasWine :Terras_Gauda_O_Rosal .
+
+
+###  https://w3id.org/def/testontw#Alto_Moncayo
+:Alto_Moncayo rdf:type owl:NamedIndividual ,
+                       :Winery ;
+              :locatedIn :Campo_de_Borja ;
+              :makesWine :Aquilon_Garnacha .
+
+
+###  https://w3id.org/def/testontw#Altos_de_Rioja
+:Altos_de_Rioja rdf:type owl:NamedIndividual ,
+                         :Winery .
+
+
+###  https://w3id.org/def/testontw#Aquilon_Garnacha
+:Aquilon_Garnacha rdf:type owl:NamedIndividual ,
+                           :Wine ;
+                  :hasBody :Full ;
+                  :hasColour :Red ;
+                  :hasFlavour :Strong ;
+                  :hasMaker :Alto_Moncayo ;
+                  :hasRegion :Campo_de_Borja ;
+                  :hasSugar :Dry ;
+                  :hasType :Grenache ;
+                  :madeWithGrape :Garnacha ;
+                  :hasConservationTemperature "16C" ;
+                  :hasDesignation "true"^^xsd:boolean ;
+                  :hasRating "4.7"^^xsd:float ;
+                  :hasYears 7 .
+
+
+###  https://w3id.org/def/testontw#Bolognese
+:Bolognese rdf:type owl:NamedIndividual ,
+                    :ItalianDishes ;
+           :hasFood :Spaguetti ;
+           :hasPairing :Terras_Gauda_O_Rosal .
+
+
+###  https://w3id.org/def/testontw#Bruto
+:Bruto rdf:type owl:NamedIndividual ,
+                :Wine ;
+       :hasBody :Full ;
+       :hasColour :Red ;
+       :hasFlavour :Moderate ;
+       :hasMaker :Juan_Gil ;
+       :hasRegion :Jumilla ;
+       :hasSugar :Dry ;
+       :hasType :Monastrel ;
+       :madeWithGrape :Monastrell ;
+       :hasConservationTemperature "16C" ;
+       :hasDesignation "true"^^xsd:boolean ;
+       :hasRating "4.5"^^xsd:float ;
+       :hasYears 6 .
+
+
+###  https://w3id.org/def/testontw#Caiño_blanco
+:Caiño_blanco rdf:type owl:NamedIndividual ,
+                       :Grape ;
+              :madeIntoWine :Terras_Gauda_O_Rosal .
+
+
+###  https://w3id.org/def/testontw#Camarosa
+:Camarosa rdf:type owl:NamedIndividual ,
+                   :Strawberry ;
+          :usedToPrepare :Strawberry_cake .
+
+
+###  https://w3id.org/def/testontw#Campo_de_Borja
+:Campo_de_Borja rdf:type owl:NamedIndividual ,
+                         :Region ;
+                :hasWinery :Alto_Moncayo .
+
+
+###  https://w3id.org/def/testontw#Carrot
+:Carrot rdf:type owl:NamedIndividual ,
+                 :Vegetables ;
+        :usedToPrepare :Cocido .
+
+
+###  https://w3id.org/def/testontw#Chardonnay
+:Chardonnay rdf:type owl:NamedIndividual ,
+                     :WineType .
+
+
+###  https://w3id.org/def/testontw#Cocido
+:Cocido rdf:type owl:NamedIndividual ,
+                 :TraditionalDishes ;
+        :hasFood :Carrot ,
+                 :Red_meats ,
+                 :White_meats ;
+        :hasPairing :Bruto .
+
+
+###  https://w3id.org/def/testontw#Delicate
+:Delicate rdf:type owl:NamedIndividual ,
+                   :WineFlavour .
+
+
+###  https://w3id.org/def/testontw#Dry
+:Dry rdf:type owl:NamedIndividual ,
+              :WineSugar .
+
+
+###  https://w3id.org/def/testontw#Feminello
+:Feminello rdf:type owl:NamedIndividual ,
+                    :Lemon ;
+           :usedToPrepare :Lemon_cake .
+
+
+###  https://w3id.org/def/testontw#Full
+:Full rdf:type owl:NamedIndividual ,
+               :WineBody .
+
+
+###  https://w3id.org/def/testontw#Garnacha
+:Garnacha rdf:type owl:NamedIndividual ,
+                   :Grape ;
+          :madeIntoWine :Aquilon_Garnacha .
+
+
+###  https://w3id.org/def/testontw#Grenache
+:Grenache rdf:type owl:NamedIndividual ,
+                   :WineType ;
+          :hasWine :Aquilon_Garnacha .
+
+
+###  https://w3id.org/def/testontw#Jerez-Xeres-Sherry
+:Jerez-Xeres-Sherry rdf:type owl:NamedIndividual ,
+                             :Region ;
+                    :hasWinery :Valdespino .
+
+
+###  https://w3id.org/def/testontw#Juan_Gil
+:Juan_Gil rdf:type owl:NamedIndividual ,
+                   :Winery ;
+          :locatedIn :Jumilla ;
+          :makesWine :Bruto .
+
+
+###  https://w3id.org/def/testontw#Jumilla
+:Jumilla rdf:type owl:NamedIndividual ,
+                  :Region ;
+         :hasWinery :Juan_Gil .
+
+
+###  https://w3id.org/def/testontw#Lemon_cake
+:Lemon_cake rdf:type owl:NamedIndividual ,
+                     :Desserts ;
+            :hasFood :Feminello ;
+            :hasPairing :Toneles_Moscatel .
+
+
+###  https://w3id.org/def/testontw#Light
+:Light rdf:type owl:NamedIndividual ,
+                :WineBody .
+
+
+###  https://w3id.org/def/testontw#Loureiro
+:Loureiro rdf:type owl:NamedIndividual ,
+                   :Grape ;
+          :madeIntoWine :Terras_Gauda_O_Rosal .
+
+
+###  https://w3id.org/def/testontw#Medium
+:Medium rdf:type owl:NamedIndividual ,
+                 :WineBody .
+
+
+###  https://w3id.org/def/testontw#Moderate
+:Moderate rdf:type owl:NamedIndividual ,
+                   :WineFlavour .
+
+
+###  https://w3id.org/def/testontw#Monastrel
+:Monastrel rdf:type owl:NamedIndividual ,
+                    :WineType ;
+           :hasWine :Bruto .
+
+
+###  https://w3id.org/def/testontw#Monastrell
+:Monastrell rdf:type owl:NamedIndividual ,
+                     :Grape ;
+            :madeIntoWine :Bruto .
+
+
+###  https://w3id.org/def/testontw#Moscatel_de_Alejandría
+:Moscatel_de_Alejandría rdf:type owl:NamedIndividual ,
+                                 :Grape ;
+                        :madeIntoWine :Toneles_Moscatel .
+
+
+###  https://w3id.org/def/testontw#OffDry
+:OffDry rdf:type owl:NamedIndividual ,
+                 :WineSugar .
+
+
+###  https://w3id.org/def/testontw#Red
+:Red rdf:type owl:NamedIndividual ,
+              :WineColour .
+
+
+###  https://w3id.org/def/testontw#Red_meats
+:Red_meats rdf:type owl:NamedIndividual ,
+                    :Meat ;
+           :usedToPrepare :Cocido .
+
+
+###  https://w3id.org/def/testontw#Rias_Baixas
+:Rias_Baixas rdf:type owl:NamedIndividual ,
+                      :Region ;
+             :hasWinery :Terras_Gauda .
+
+
+###  https://w3id.org/def/testontw#Ribera_del_Duero
+:Ribera_del_Duero rdf:type owl:NamedIndividual ,
+                           :Region .
+
+
+###  https://w3id.org/def/testontw#Ribera_del_Duero_Red
+:Ribera_del_Duero_Red rdf:type owl:NamedIndividual ,
+                               :WineType .
+
+
+###  https://w3id.org/def/testontw#Rose
+:Rose rdf:type owl:NamedIndividual ,
+               :WineColour .
+
+
+###  https://w3id.org/def/testontw#Seafood_soup
+:Seafood_soup rdf:type owl:NamedIndividual ,
+                       :Soups ;
+              :hasFood :Shellfish ;
+              :hasPairing :Terras_Gauda_O_Rosal .
+
+
+###  https://w3id.org/def/testontw#Shellfish
+:Shellfish rdf:type owl:NamedIndividual ,
+                    :Seafood ;
+           :usedToPrepare :Seafood_soup .
+
+
+###  https://w3id.org/def/testontw#Sherry
+:Sherry rdf:type owl:NamedIndividual ,
+                 :WineType ;
+        :hasWine :Toneles_Moscatel .
+
+
+###  https://w3id.org/def/testontw#Spaguetti
+:Spaguetti rdf:type owl:NamedIndividual ,
+                    :Pasta ;
+           :usedToPrepare :Bolognese .
+
+
+###  https://w3id.org/def/testontw#Strawberry_cake
+:Strawberry_cake rdf:type owl:NamedIndividual ,
+                          :Desserts ;
+                 :hasFood :Camarosa ;
+                 :hasPairing :Toneles_Moscatel .
+
+
+###  https://w3id.org/def/testontw#Strong
+:Strong rdf:type owl:NamedIndividual ,
+                 :WineFlavour .
+
+
+###  https://w3id.org/def/testontw#Sweet
+:Sweet rdf:type owl:NamedIndividual ,
+                :WineSugar .
+
+
+###  https://w3id.org/def/testontw#Terras_Gauda
+:Terras_Gauda rdf:type owl:NamedIndividual ,
+                       :Winery ;
+              :locatedIn :Rias_Baixas ;
+              :makesWine :Terras_Gauda_O_Rosal .
+
+
+###  https://w3id.org/def/testontw#Terras_Gauda_O_Rosal
+:Terras_Gauda_O_Rosal rdf:type owl:NamedIndividual ,
+                               :Wine ;
+                      :hasBody :Medium ;
+                      :hasColour :White ;
+                      :hasFlavour :Strong ;
+                      :hasMaker :Terras_Gauda ;
+                      :hasRegion :Rias_Baixas ;
+                      :hasSugar :Dry ;
+                      :hasType :Albariño ;
+                      :madeWithGrape :Caiño_blanco ,
+                                     :Loureiro ;
+                      :hasConservationTemperature "10C" ;
+                      :hasDesignation "true"^^xsd:boolean ;
+                      :hasRating "4.3"^^xsd:float ;
+                      :hasYears 3 .
+
+
+###  https://w3id.org/def/testontw#Toneles_Moscatel
+:Toneles_Moscatel rdf:type owl:NamedIndividual ,
+                           :Wine ;
+                  :hasBody :Medium ;
+                  :hasColour :Rose ;
+                  :hasFlavour :Moderate ;
+                  :hasMaker :Valdespino ;
+                  :hasRegion :Jerez-Xeres-Sherry ;
+                  :hasSugar :Sweet ;
+                  :hasType :Sherry ;
+                  :madeWithGrape :Moscatel_de_Alejandría ;
+                  :hasConservationTemperature "15C" ;
+                  :hasDesignation "true"^^xsd:boolean ;
+                  :hasRating "4.8"^^xsd:float ;
+                  :hasYears 3 .
+
+
+###  https://w3id.org/def/testontw#Toro
+:Toro rdf:type owl:NamedIndividual ,
+               :Region .
+
+
+###  https://w3id.org/def/testontw#Toro_Albala
+:Toro_Albala rdf:type owl:NamedIndividual ,
+                      :Winery .
+
+
+###  https://w3id.org/def/testontw#Valdespino
+:Valdespino rdf:type owl:NamedIndividual ,
+                     :Winery ;
+            :locatedIn :Jerez-Xeres-Sherry ;
+            :makesWine :Toneles_Moscatel .
+
+
+###  https://w3id.org/def/testontw#White
+:White rdf:type owl:NamedIndividual ,
+                :WineColour .
+
+
+###  https://w3id.org/def/testontw#White_meats
+:White_meats rdf:type owl:NamedIndividual ,
+                      :Fowl ;
+             :usedToPrepare :Cocido .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Consumables
+                :Region
+                :WineCharasteristics
+                :WineType
+                :Winery
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Dishes
+                :Drinkables
+                :Edibles
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Fowl
+                :Fruit
+                :Meat
+                :Pasta
+                :Seafood
+                :Vegetables
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#hd> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDesignation ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#hd>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRegion ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#hd> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first "true"^^xsd:boolean ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDesignation ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#r> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 4 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Excellent ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#w> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 3.99 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#r> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 3 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Good ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
