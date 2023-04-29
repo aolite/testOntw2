@@ -1,0 +1,1527 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasMaker"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/testontw#Fowl"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Fruit"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Meat"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Pasta"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Seafood"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Vegetables"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasYears"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    }, {
+      "@id" : "_:genid26"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#hd"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "true"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#equal"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasRegion"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/testontw#Consumables"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Region"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#WineCharasteristics"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#WineType"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Winery"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#hd"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasDesignation"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasDesignation"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid39"
+    }, {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#Excellent"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid54"
+    }, {
+      "@id" : "_:genid50"
+    }, {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid46"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid58"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#w"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "3.99"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/def/testontw#Good"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/testontw#Dishes"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Drinkables"
+    }, {
+      "@id" : "https://w3id.org/def/testontw#Edibles"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#equal",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://w3id.org/def/testontw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine Ontology for Recommendation System\nAuthors: Yago Estévez Davila, José David Zapata García"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Aging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class provides information about the wine's aging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineCharasteristics"
+  } ],
+  "https://w3id.org/def/testontw#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Aging_of_wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Albariño",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ],
+  "https://w3id.org/def/testontw#hasWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Alto_Moncayo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "https://w3id.org/def/testontw#locatedIn" : [ {
+    "@id" : "https://w3id.org/def/testontw#Campo_de_Borja"
+  } ],
+  "https://w3id.org/def/testontw#makesWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aquilon_Garnacha"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Altos_de_Rioja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Aquilon_Garnacha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "https://w3id.org/def/testontw#hasBody" : [ {
+    "@id" : "https://w3id.org/def/testontw#Full"
+  } ],
+  "https://w3id.org/def/testontw#hasColour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Red"
+  } ],
+  "https://w3id.org/def/testontw#hasConservationTemperature" : [ {
+    "@value" : "16C"
+  } ],
+  "https://w3id.org/def/testontw#hasDesignation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://w3id.org/def/testontw#hasFlavour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Strong"
+  } ],
+  "https://w3id.org/def/testontw#hasMaker" : [ {
+    "@id" : "https://w3id.org/def/testontw#Alto_Moncayo"
+  } ],
+  "https://w3id.org/def/testontw#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.7"
+  } ],
+  "https://w3id.org/def/testontw#hasRegion" : [ {
+    "@id" : "https://w3id.org/def/testontw#Campo_de_Borja"
+  } ],
+  "https://w3id.org/def/testontw#hasSugar" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dry"
+  } ],
+  "https://w3id.org/def/testontw#hasType" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grenache"
+  } ],
+  "https://w3id.org/def/testontw#hasYears" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "https://w3id.org/def/testontw#madeWithGrape" : [ {
+    "@id" : "https://w3id.org/def/testontw#Garnacha"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Bolognese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#ItalianDishes"
+  } ],
+  "https://w3id.org/def/testontw#hasFood" : [ {
+    "@id" : "https://w3id.org/def/testontw#Spaguetti"
+  } ],
+  "https://w3id.org/def/testontw#hasPairing" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Bruto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "https://w3id.org/def/testontw#hasBody" : [ {
+    "@id" : "https://w3id.org/def/testontw#Full"
+  } ],
+  "https://w3id.org/def/testontw#hasColour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Red"
+  } ],
+  "https://w3id.org/def/testontw#hasConservationTemperature" : [ {
+    "@value" : "16C"
+  } ],
+  "https://w3id.org/def/testontw#hasDesignation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://w3id.org/def/testontw#hasFlavour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Moderate"
+  } ],
+  "https://w3id.org/def/testontw#hasMaker" : [ {
+    "@id" : "https://w3id.org/def/testontw#Juan_Gil"
+  } ],
+  "https://w3id.org/def/testontw#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "https://w3id.org/def/testontw#hasRegion" : [ {
+    "@id" : "https://w3id.org/def/testontw#Jumilla"
+  } ],
+  "https://w3id.org/def/testontw#hasSugar" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dry"
+  } ],
+  "https://w3id.org/def/testontw#hasType" : [ {
+    "@id" : "https://w3id.org/def/testontw#Monastrel"
+  } ],
+  "https://w3id.org/def/testontw#hasYears" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ],
+  "https://w3id.org/def/testontw#madeWithGrape" : [ {
+    "@id" : "https://w3id.org/def/testontw#Monastrell"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Caiño_blanco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ],
+  "https://w3id.org/def/testontw#madeIntoWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Camarosa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Strawberry"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Strawberry_cake"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Campo_de_Borja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ],
+  "https://w3id.org/def/testontw#hasWinery" : [ {
+    "@id" : "https://w3id.org/def/testontw#Alto_Moncayo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Carrot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Vegetables"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Cocido"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Chardonnay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Cocido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#TraditionalDishes"
+  } ],
+  "https://w3id.org/def/testontw#hasFood" : [ {
+    "@id" : "https://w3id.org/def/testontw#Carrot"
+  }, {
+    "@id" : "https://w3id.org/def/testontw#Red_meats"
+  }, {
+    "@id" : "https://w3id.org/def/testontw#White_meats"
+  } ],
+  "https://w3id.org/def/testontw#hasPairing" : [ {
+    "@id" : "https://w3id.org/def/testontw#Bruto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Consumables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Everything that is able for consumption"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Crianza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "These wines usually have 24 or less months of aging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aging"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Delicate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineFlavour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Desserts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sweet meals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/testontw#ItalianDishes"
+  }, {
+    "@id" : "https://w3id.org/def/testontw#Soups"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Dishes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Different courses made with various ingredients"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Consumables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Drinkables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Drinks and simmilar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Consumables"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Dry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineSugar"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Edibles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ingredients used for course meals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Consumables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Excellent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Items with puntuation higher or equal than 4 out of 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Rating"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/testontw#Good"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Feminello",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Lemon"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Lemon_cake"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Fowl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "White meat like chicken, rabbit, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Fruit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vegetables with pulp arount the seed(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Full",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineBody"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Garnacha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ],
+  "https://w3id.org/def/testontw#madeIntoWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aquilon_Garnacha"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Good",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Items with puntuation higher between 3 and 3.99 out of 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Rating"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#GranReserva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wines with at least 60 months of aging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aging"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Grape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fruit used to make wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#SweetFruit"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/testontw#Strawberry"
+  } ],
+  "https://w3id.org/def/testontw#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Grape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Grenache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ],
+  "https://w3id.org/def/testontw#hasWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aquilon_Garnacha"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#ItalianDishes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Traditional italian course meals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/testontw#Soups"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Jerez-Xeres-Sherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ],
+  "https://w3id.org/def/testontw#hasWinery" : [ {
+    "@id" : "https://w3id.org/def/testontw#Valdespino"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Juan_Gil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "https://w3id.org/def/testontw#locatedIn" : [ {
+    "@id" : "https://w3id.org/def/testontw#Jumilla"
+  } ],
+  "https://w3id.org/def/testontw#makesWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Bruto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Jumilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ],
+  "https://w3id.org/def/testontw#hasWinery" : [ {
+    "@id" : "https://w3id.org/def/testontw#Juan_Gil"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Lemon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sour tasting yellow fruit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#NonSweetFruit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Lemon_cake",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Desserts"
+  } ],
+  "https://w3id.org/def/testontw#hasFood" : [ {
+    "@id" : "https://w3id.org/def/testontw#Feminello"
+  } ],
+  "https://w3id.org/def/testontw#hasPairing" : [ {
+    "@id" : "https://w3id.org/def/testontw#Toneles_Moscatel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineBody"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Loureiro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ],
+  "https://w3id.org/def/testontw#madeIntoWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Meat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Red meats like beef or pig"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineBody"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Moderate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineFlavour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Monastrel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ],
+  "https://w3id.org/def/testontw#hasWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Bruto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Monastrell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ],
+  "https://w3id.org/def/testontw#madeIntoWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Bruto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Moscatel_de_Alejandría",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ],
+  "https://w3id.org/def/testontw#madeIntoWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Toneles_Moscatel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#NonSweetFruit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fruits with a sour or acid taste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Fruit"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/testontw#SweetFruit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#OffDry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineSugar"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Pasta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Starchy food asociated with italian cuisine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mean puntuation obtained from customers"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineColour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Red_meats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Meat"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Cocido"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Geographical delimitations"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Reserva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "These wines have been aged between 25 and 59 months"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aging"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Rias_Baixas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ],
+  "https://w3id.org/def/testontw#hasWinery" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Ribera_del_Duero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Ribera_del_Duero_Red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Rose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineColour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Seafood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Shellfish or seafish, excludes sweet water fish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Seafood_soup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Soups"
+  } ],
+  "https://w3id.org/def/testontw#hasFood" : [ {
+    "@id" : "https://w3id.org/def/testontw#Shellfish"
+  } ],
+  "https://w3id.org/def/testontw#hasPairing" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Shellfish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Seafood"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Seafood_soup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Sherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ],
+  "https://w3id.org/def/testontw#hasWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Toneles_Moscatel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Soups",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Meals with liquid consistence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Spaguetti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Pasta"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Bolognese"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Strawberry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sweet tasting berry, red in colour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#SweetFruit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Strawberry_cake",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Desserts"
+  } ],
+  "https://w3id.org/def/testontw#hasFood" : [ {
+    "@id" : "https://w3id.org/def/testontw#Camarosa"
+  } ],
+  "https://w3id.org/def/testontw#hasPairing" : [ {
+    "@id" : "https://w3id.org/def/testontw#Toneles_Moscatel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Strong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineFlavour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Sweet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineSugar"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#SweetFruit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fruits with sweet taste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Fruit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Terras_Gauda",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "https://w3id.org/def/testontw#locatedIn" : [ {
+    "@id" : "https://w3id.org/def/testontw#Rias_Baixas"
+  } ],
+  "https://w3id.org/def/testontw#makesWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Terras_Gauda_O_Rosal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "https://w3id.org/def/testontw#hasBody" : [ {
+    "@id" : "https://w3id.org/def/testontw#Medium"
+  } ],
+  "https://w3id.org/def/testontw#hasColour" : [ {
+    "@id" : "https://w3id.org/def/testontw#White"
+  } ],
+  "https://w3id.org/def/testontw#hasConservationTemperature" : [ {
+    "@value" : "10C"
+  } ],
+  "https://w3id.org/def/testontw#hasDesignation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://w3id.org/def/testontw#hasFlavour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Strong"
+  } ],
+  "https://w3id.org/def/testontw#hasMaker" : [ {
+    "@id" : "https://w3id.org/def/testontw#Terras_Gauda"
+  } ],
+  "https://w3id.org/def/testontw#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "https://w3id.org/def/testontw#hasRegion" : [ {
+    "@id" : "https://w3id.org/def/testontw#Rias_Baixas"
+  } ],
+  "https://w3id.org/def/testontw#hasSugar" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dry"
+  } ],
+  "https://w3id.org/def/testontw#hasType" : [ {
+    "@id" : "https://w3id.org/def/testontw#Albariño"
+  } ],
+  "https://w3id.org/def/testontw#hasYears" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/testontw#madeWithGrape" : [ {
+    "@id" : "https://w3id.org/def/testontw#Caiño_blanco"
+  }, {
+    "@id" : "https://w3id.org/def/testontw#Loureiro"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Toneles_Moscatel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "https://w3id.org/def/testontw#hasBody" : [ {
+    "@id" : "https://w3id.org/def/testontw#Medium"
+  } ],
+  "https://w3id.org/def/testontw#hasColour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Rose"
+  } ],
+  "https://w3id.org/def/testontw#hasConservationTemperature" : [ {
+    "@value" : "15C"
+  } ],
+  "https://w3id.org/def/testontw#hasDesignation" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://w3id.org/def/testontw#hasFlavour" : [ {
+    "@id" : "https://w3id.org/def/testontw#Moderate"
+  } ],
+  "https://w3id.org/def/testontw#hasMaker" : [ {
+    "@id" : "https://w3id.org/def/testontw#Valdespino"
+  } ],
+  "https://w3id.org/def/testontw#hasRating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ],
+  "https://w3id.org/def/testontw#hasRegion" : [ {
+    "@id" : "https://w3id.org/def/testontw#Jerez-Xeres-Sherry"
+  } ],
+  "https://w3id.org/def/testontw#hasSugar" : [ {
+    "@id" : "https://w3id.org/def/testontw#Sweet"
+  } ],
+  "https://w3id.org/def/testontw#hasType" : [ {
+    "@id" : "https://w3id.org/def/testontw#Sherry"
+  } ],
+  "https://w3id.org/def/testontw#hasYears" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/testontw#madeWithGrape" : [ {
+    "@id" : "https://w3id.org/def/testontw#Moscatel_de_Alejandría"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Toro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Toro_Albala",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#TraditionalDishes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Meals associated with confort food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Valdespino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "https://w3id.org/def/testontw#locatedIn" : [ {
+    "@id" : "https://w3id.org/def/testontw#Jerez-Xeres-Sherry"
+  } ],
+  "https://w3id.org/def/testontw#makesWine" : [ {
+    "@id" : "https://w3id.org/def/testontw#Toneles_Moscatel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Vegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Other kind of vegetables"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#White",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineColour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#White_meats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/testontw#Fowl"
+  } ],
+  "https://w3id.org/def/testontw#usedToPrepare" : [ {
+    "@id" : "https://w3id.org/def/testontw#Cocido"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Alcoholic beverage made from fermented grape juice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#Drinkables"
+  } ],
+  "https://w3id.org/def/testontw#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The sensation causes by the wine in the mouth when sipping it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineTaste"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineCharasteristics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class collects the properties needed to describe wine in terms of flavour and aspect"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineColour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine's visual qualities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineCharasteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineFlavour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flavours that can be appreciated when tasting the wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineTaste"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineSugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the sweetness of the wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineTaste"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineTaste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the flavour in terms of various aspects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineCharasteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#WineType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Types of wine, depending of grapes used in the preparation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#Winery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine makers"
+  } ],
+  "https://w3id.org/def/testontw#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Winery"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasAging",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about the wine aging category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Aging"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The wine body can be light, medium or full"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineBody"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasCharacteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasCharacteristics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about the wine's organoleptic properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineCharasteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasColour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The wine colour can be red, rose or white"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineColour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasCharacteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasConservationTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Recommended preservation temperature for the wine as given by its maker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasDesignation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about wine's origin designation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasFlavour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The wine flavour can be delicate, moderate or strong"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineFlavour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasCharacteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about the ingredients used for each course"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#usedToPrepare"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasMaker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates each wine with its correspondering winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#makesWine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasPairing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides recommendations for food and wine pairing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Numerical mean rating between 1.0 and 5.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides the region where the wine was produced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasSugar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine's sweetnes, can be dry, offdry or sweet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineSugar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#hasCharacteristics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used to associated each wine with its corresponding type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides the wines made by each winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#WineType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasWinery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates each winery with its region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#locatedIn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#hasYears",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine's aging years"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of hasWinery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Region"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#madeIntoWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about the wines made from a given grape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/testontw#madeWithGrape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#madeWithGrape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about the grape(s) used to make a given wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Grape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#makesWine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides the list of wines made by a given winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Winery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Wine"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/testontw#usedToPrepare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides information about the courses that can be made with each food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/testontw#Edibles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/testontw#Dishes"
+  } ]
+}, {
+  "@id" : "urn:swrl:var#hd",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "testontw:Vegetables" "testontw:NonSweetFruit" "testontw:WineFlavour" "testontw:GranReserva" "testontw:Aging" "testontw:Desserts" "testontw:WineColour" "testontw:Soups" "testontw:Seafood" "testontw:WineTaste" "testontw:Fruit" "testontw:Excellent" "testontw:Edibles" "testontw:SweetFruit" "testontw:Meat" "testontw:Good" "testontw:Wine" "testontw:Consumables" "testontw:Pasta" "testontw:Lemon" "testontw:TraditionalDishes" "testontw:Grape" "testontw:Rating" "testontw:Reserva" "testontw:Dishes" "testontw:WineBody" "testontw:WineSugar" "testontw:Strawberry" "testontw:Drinkables" "testontw:WineCharasteristics" "testontw:Crianza" "testontw:ItalianDishes" "testontw:Fowl" ; /*classes style*/
+	"testontw:Soups" -> "testontw:Dishes" [ label = "rdfs:subClassOf" ];
+	"testontw:Seafood" -> "testontw:Edibles" [ label = "rdfs:subClassOf" ];
+	"testontw:Reserva" -> "testontw:Aging" [ label = "rdfs:subClassOf" ];
+	"testontw:Crianza" -> "testontw:Aging" [ label = "rdfs:subClassOf" ];
+	"testontw:Fruit" -> "testontw:Edibles" [ label = "rdfs:subClassOf" ];
+	"testontw:WineFlavour" -> "testontw:WineTaste" [ label = "rdfs:subClassOf" ];
+	"testontw:Dishes" -> "testontw:Consumables" [ label = "rdfs:subClassOf" ];
+	"testontw:ItalianDishes" -> "testontw:Dishes" [ label = "rdfs:subClassOf" ];
+	"testontw:Desserts" -> "testontw:Dishes" [ label = "rdfs:subClassOf" ];
+	"testontw:WineBody" -> "testontw:WineTaste" [ label = "rdfs:subClassOf" ];
+	"testontw:Grape" -> "testontw:SweetFruit" [ label = "rdfs:subClassOf" ];
+	"testontw:Excellent" -> "testontw:Rating" [ label = "rdfs:subClassOf" ];
+	"testontw:Drinkables" -> "testontw:Consumables" [ label = "rdfs:subClassOf" ];
+	"testontw:Edibles" -> "testontw:Consumables" [ label = "rdfs:subClassOf" ];
+	"testontw:Good" -> "testontw:Rating" [ label = "rdfs:subClassOf" ];
+	"testontw:Vegetables" -> "testontw:Edibles" [ label = "rdfs:subClassOf" ];
+	"testontw:Strawberry" -> "testontw:SweetFruit" [ label = "rdfs:subClassOf" ];
+	"testontw:WineTaste" -> "testontw:WineCharasteristics" [ label = "rdfs:subClassOf" ];
+	"testontw:Fowl" -> "testontw:Edibles" [ label = "rdfs:subClassOf" ];
+	"testontw:SweetFruit" -> "testontw:Fruit" [ label = "rdfs:subClassOf" ];
+	"testontw:TraditionalDishes" -> "testontw:Dishes" [ label = "rdfs:subClassOf" ];
+	"testontw:Meat" -> "testontw:Edibles" [ label = "rdfs:subClassOf" ];
+	"testontw:WineColour" -> "testontw:WineCharasteristics" [ label = "rdfs:subClassOf" ];
+	"testontw:Pasta" -> "testontw:Edibles" [ label = "rdfs:subClassOf" ];
+	"testontw:Lemon" -> "testontw:NonSweetFruit" [ label = "rdfs:subClassOf" ];
+	"testontw:Wine" -> "testontw:Drinkables" [ label = "rdfs:subClassOf" ];
+	"testontw:WineSugar" -> "testontw:WineTaste" [ label = "rdfs:subClassOf" ];
+	"testontw:NonSweetFruit" -> "testontw:Fruit" [ label = "rdfs:subClassOf" ];
+	"testontw:Aging" -> "testontw:WineCharasteristics" [ label = "rdfs:subClassOf" ];
+	"testontw:GranReserva" -> "testontw:Aging" [ label = "rdfs:subClassOf" ];
+
+}
