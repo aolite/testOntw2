@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/def/testontw">
-    <Prefix name="" IRI="http://www.semanticweb.org/david/ontologies/2023/3/testont"/>
+    <Prefix name="" IRI="https://w3id.org/def/testontw"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,7 +15,6 @@
     <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
-    <Prefix name="untitled-ontology-6" IRI="http://www.semanticweb.org/david/ontologies/2023/3/untitled-ontology-6#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:license"/>
         <Literal>http://purl.org/NET/rdflicense/cc-by4.0</Literal>
